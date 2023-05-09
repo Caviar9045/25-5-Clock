@@ -1,0 +1,169 @@
+    /* 25 + 5 Project */
+/* © Created by Caviar9045 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --main-color-bg: #FFAA99;
+  --main-color-shadows: #272727;
+  --main-color-boxes: #ffebe7;
+  --main-color-buttons: #FFD480;
+  --main-color-buttons-hover: #DFBA70;
+}
+
+html {
+  background-color: var(--main-color-bg);
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  width: 500px;
+}
+
+.title {
+  text-shadow: 2px 2.2px 2px rgba(0, 0, 0, 0.42);
+  padding-top: 6vh;
+}
+
+/* Session (timer) */
+.session {
+  margin: 12vh auto 0 auto;
+  width: 350px;
+  background-color: var(--main-color-boxes);
+  border: 4px solid var(--main-color-shadows);
+  border-radius: 15px;
+  -webkit-box-shadow: 9px 4px 18px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 9px 4px 18px 2px rgba(0, 0, 0, 0.45);
+}
+
+.session>button {
+  margin: 0 1vh 2vh 1vh;
+  background-color: var(--main-color-buttons);
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.session>button:hover {
+  cursor: pointer;
+  background-color: var(--main-color-buttons-hover);
+  transform: scale(1.1);
+}
+
+/* Options Boxes*/
+.opts {
+  height: 16vh;
+  background-color: var(--main-color-boxes);
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  border: 4px solid var(--main-color-shadows);
+  border-radius: 15px;
+  -webkit-box-shadow: 9px 4px 18px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 9px 4px 18px 2px rgba(0, 0, 0, 0.45);
+}
+
+.session-opt {
+  margin-right: 4vw;
+}
+
+.session-opt>button {
+  margin: 0 1vh 2vh 1vh;
+  background-color: var(--main-color-buttons);
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.session-opt>button:hover {
+  cursor: pointer;
+  background-color: var(--main-color-buttons-hover);
+  transform: scale(1.1);
+}
+
+.session-opt>p {
+  font-size: 1.1em;
+}
+
+.break-opt>button {
+  margin: 0 1vh 2vh 1vh;
+  background-color: var(--main-color-buttons);
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.break-opt>button:hover {
+  cursor: pointer;
+  background-color: var(--main-color-buttons-hover);
+  transform: scale(1.1);
+}
+
+.break-opt>p {
+  font-size: 1.1em;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 8vh;
+  text-align: center;
+  color: var(--color-main);
+  display: block;
+  color: white;
+  text-shadow: 2px 2.2px 2px rgba(0, 0, 0, 0.82);
+}
+
+#footer-a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-main);
+  transition: 0.5s all;
+}
+
+#footer-a:hover {
+  transform: scale(1.3);
+}
+
+/* Medias */
+
+@media screen and (max-width: 420px) {
+  html{
+    background-size: cover;
+  }
+  body {
+    font-size: 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .wrapper{
+    margin: 0 auto 0 auto;
+    width: 90vw;
+  }
+  .title{
+    margin-left: -3vw;
+    width: 96vw;
+  }
+  .opts {
+    height: 22vh;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+}
